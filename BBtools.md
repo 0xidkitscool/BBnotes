@@ -1,5 +1,5 @@
 # 🐛 Bug Bounty Toolkit 
-*A curated list of tools and techniques for effective bug hunting*
+*A curated list of tools for effective bug hunting*
 
 ---
 
