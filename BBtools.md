@@ -17,15 +17,15 @@
 ### Domain Enumeration
 | Tool | Description | Installation |
 |------|-------------|--------------|
-| 🚀 **amass** | Subdomain enumeration via OSINT | `Arch: pacman -S amass, debian:apt install amass` |
-| 🌐 **sublist3r** | Fast subdomains enumeration tool | `arch: pacman -S sublist3r, debian: apt install sublist3r` |
-| 🔍 **subfinder** | Subdomain discovery with multiple sources | `arch: pacman -S subfinder, debian: apt install subfinder` |
+| 🚀 **amass** | Subdomain enumeration via OSINT | `Arch: pacman -S amass, Debian: apt install amass` |
+| 🌐 **sublist3r** | Fast subdomains enumeration tool | `Arch: pacman -S sublist3r, Debian: apt install sublist3r` |
+| 🔍 **subfinder** | Subdomain discovery with multiple sources | `Arch: pacman -S subfinder, Debian: apt install subfinder` |
 
 ### Directory Fuzzing
 | Tool | Description | Installation |
 |------|-------------|--------------|
-| 📂 **dirbuster** | Classic directory brute-forcing tool | `arch: pacman -S dirbuster, debian: apt install dirbuster` |
-| ⚡ **ffuf** | Fast web fuzzer written in Go | `arch: pacman -S ffuf, debian: apt install ffuf` |
+| 📂 **dirbuster** | Classic directory brute-forcing tool | `Arch: pacman -S dirbuster, Debian: apt install dirbuster` |
+| ⚡ **ffuf** | Fast web fuzzer written in Go | `Arch: pacman -S ffuf, Debian: apt install ffuf` |
 
 ---
 
