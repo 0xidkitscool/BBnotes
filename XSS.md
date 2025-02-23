@@ -108,5 +108,3 @@ element.textContent = userInput;
 ```
 
 ---
-
-*Found a mistake or have improvements? Submit a PR! Contributions welcome!* 🚀
