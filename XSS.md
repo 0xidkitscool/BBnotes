@@ -99,7 +99,7 @@ XSS (Cross-Site Scripting) is an injection vulnerability where attackers execute
 | **Use CSP Headers** | `Content-Security-Policy: default-src 'self'` |  
 | **Avoid Unsafe Functions** | Use `textContent` instead of `innerHTML` |  
 
-```javascript
+
 
 
 
