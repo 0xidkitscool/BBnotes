@@ -100,11 +100,6 @@ XSS (Cross-Site Scripting) is an injection vulnerability where attackers execute
 | **Avoid Unsafe Functions** | Use `textContent` instead of `innerHTML` |  
 
 ```javascript
-// UNSAFE ❌
-element.innerHTML = userInput;
 
-// SAFE ✅
-element.textContent = userInput;
-```
 
 ---
